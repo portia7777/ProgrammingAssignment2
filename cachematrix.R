@@ -10,7 +10,7 @@ makeCacheMatrix <- function(x = matrix()) {
     m <<- NULL
   }
   get <- function() x    ## get the value of the vector
-  setsolve <- function(mean) m <<- solve  ## set the value of the mean
+  setsolve <- function(solve) m <<- solve  ## set the value of the mean
   getsolve <- function() m  ## get the value of the mean
   list(set = set, get = get,
        setsolve = setsolve,
